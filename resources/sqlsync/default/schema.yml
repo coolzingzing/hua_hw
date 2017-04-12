@@ -159,6 +159,18 @@
         - { Table: '#__banners', Non_unique: '1', Key_name: idx_metakey_prefix, Seq_in_index: '1', Column_name: metakey_prefix, Sub_part: '100', 'Null': '', Comment: '', Index_comment: '' }
         - { Table: '#__banners', Non_unique: '1', Key_name: idx_banner_catid, Seq_in_index: '1', Column_name: catid, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
         - { Table: '#__banners', Non_unique: '1', Key_name: idx_language, Seq_in_index: '1', Column_name: language, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
+'#__bliss_user_profiles':
+    name: '#__bliss_user_profiles'
+    from:
+        - '#__bliss_user_profiles'
+    columns:
+        id: { Field: id, Type: int(11), 'Null': 'NO', Default: null, Extra: auto_increment, Comment: '', From: [id] }
+        user_id: { Field: user_id, Type: int(11), 'Null': 'YES', Default: null, Extra: '', Comment: '', From: [user_id] }
+        birthday: { Field: birthday, Type: datetime, 'Null': 'YES', Default: null, Extra: '', Comment: '', From: [birthday] }
+        phone: { Field: phone, Type: varchar(255), 'Null': 'YES', Default: null, Extra: '', Comment: '', From: [phone] }
+        address: { Field: address, Type: varchar(255), 'Null': 'YES', Default: null, Extra: '', Comment: '', From: [address] }
+    index:
+        - { Table: '#__bliss_user_profiles', Non_unique: '0', Key_name: PRIMARY, Seq_in_index: '1', Column_name: id, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
 '#__categories':
     name: '#__categories'
     from:

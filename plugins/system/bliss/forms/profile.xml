@@ -1,0 +1,28 @@
+<form>
+    <fields name="profile">
+        <fieldset name="details" label="Details">
+            <field
+                    name="address"
+                    type="text"
+                    label="Address"
+                    description="This is Address"
+                    class="input-xlarge"
+                    hit="Please enter address" />
+            <field
+                    name="phone"
+                    type="text"
+                    label="phone"
+                    description="This is phone"
+                    class="input-xlarge"
+                    hit="Please enter phone" />
+            <field
+                    name="birthday"
+                    type="text"
+                    label="birthday"
+                    description="This is birthday"
+                    class="input-xlarge"
+                    hit="Please enter birthday" />
+        </fieldset>
+    </fields>
+
+</form>

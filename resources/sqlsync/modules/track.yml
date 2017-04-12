@@ -4,6 +4,7 @@ table:
     '#__banner_clients': none
     '#__banner_tracks': none
     '#__banners': none
+    '#__bliss_user_profiles': none
     '#__categories': none
     '#__contact_details': none
     '#__content': none

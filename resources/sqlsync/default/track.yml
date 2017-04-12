@@ -4,6 +4,7 @@ table:
     '#__banner_clients': all
     '#__banner_tracks': all
     '#__banners': all
+    '#__bliss_user_profiles': cols
     '#__categories': all
     '#__contact_details': all
     '#__content': all
