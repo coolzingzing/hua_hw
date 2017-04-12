@@ -6,3 +6,11 @@
 
 # For whole Joomla! site #
 configuration.php
+
+
+/logs/*
+!/logs/index.html
+/cache/*
+!/cache/index.html
+/tmp/*
+!/tmp/index.html

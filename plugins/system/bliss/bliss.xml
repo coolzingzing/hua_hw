@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>plg_system_bliss</name>
+    <author>Bliss</author>
+    <version>1.0.0</version>
+    <description>Bliss System Plugin</description>
+    <files>
+        <filename plugin="bliss">bliss.php</filename>
+    </files>
+</extension>
