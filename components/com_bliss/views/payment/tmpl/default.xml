@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="payment頁面" option="COM_BLISS_PAYMENT_VIEW_DEFAULT_OPTION">
+        <help key = "JHELP_MENUS_MENU_ITEM_ARTICLE_CATEGORY_BLOG" />
+        <message>
+            <![CDATA[COM_CONTENT_CATEGORY_VIEW_BLOG_DESC]]>
+        </message>
+    </layout>
+
+    <!-- Add fields to the request variables for the layout. -->
+    <fields name="request">
+        <fieldset name="request">
+            <field
+                    name="id"
+                    type="modal_bliss"
+                    description="JGLOBAL_CHOOSE_CATEGORY_DESC"
+                    extension="com_bliss"
+                    label="JGLOBAL_CHOOSE_CATEGORY_LABEL"
+                    required="true"
+            />
+        </fieldset>
+    </fields>
+
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+
+    </fields>
+</metadata>
