@@ -1,6 +1,25 @@
 <form>
     <fields name="profile">
-        <fieldset name="details" label="Details">
+        <fieldset name="details" label="Details"
+            addfieldpath="">
+            <field
+                    name="address"
+                    type="sql"
+                    label="Address"
+                    description="This is Address"
+                    query=""
+                    class="input-xlarge"
+                    hit="Please enter address"
+                    onchange="changeDis()"/>
+
+            <field
+                    name="address"
+                    type="cities"
+                    label="Address"
+                    description="This is Address"
+                    class="input-xlarge"
+                    hit="Please enter address"
+                    showon="city:1"/>
             <field
                     name="address"
                     type="text"
