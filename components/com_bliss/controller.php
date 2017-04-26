@@ -63,6 +63,23 @@ class BlissController extends JControllerLegacy{
 
 	}
 
+	function registerAjax(){
+		$data=[
+			'name'=>'abcname',
+			'username'=>'abc',
+			'password1'=>'1234',
+			'email'=>'test@gmail.com'
+		];
+
+		//validate
+
+		$data = $this->input->get('user',[],'array');
+		$user = JUser::getInstance();
+		$user->bind($data);
+		$user->save();
+		echo json_encode($user->getProperties());
+	}
+
 
 }
 
