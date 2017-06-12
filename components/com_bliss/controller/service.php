@@ -11,6 +11,9 @@ require_once  JPATH_ADMINISTRATOR . '\components\com_bliss\vendor\autoload.php';
  */
 
 class BlissControllerService extends JControllerLegacy {
+	public function retry(){
+		
+	}
 
 	public function push(){
 		 $client = $this-> getSqlClient();
@@ -81,7 +84,8 @@ class BlissControllerService extends JControllerLegacy {
 			switch ($body['task'])
 			{
 				case 'send.donation.info':
-					throw new \Exception('Failed');
+						echo 'Handling id:';
+				//	throw new \Exception('Failed');
 				//		$this->donation();
 				//@ Do success
 						break;
