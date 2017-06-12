@@ -81,6 +81,7 @@ class BlissControllerService extends JControllerLegacy {
 			switch ($body['task'])
 			{
 				case 'send.donation.info':
+					throw new \Exception('Failed');
 				//		$this->donation();
 				//@ Do success
 						break;
@@ -99,7 +100,7 @@ class BlissControllerService extends JControllerLegacy {
 			//@ Release messsage back
 			if($retryTimes +1 >= 5){
 				$client->deleteMessage([
-					'QueueUrl' => $this->getSqlClient($client),
+					'QueueUrl' => $this->getQueueUrl($client),
 					'ReceiptHandle' => $message['ReceiptHandle']
 				]);
 			}
@@ -110,7 +111,7 @@ class BlissControllerService extends JControllerLegacy {
 				'VisibilityTimeout' =>1
 			]);
 
-			echo "Failed,Release back;";
+			echo "Failed,Release back; retryTimes=".$retryTimes;
 		}
 	//	print_r($result);
 
